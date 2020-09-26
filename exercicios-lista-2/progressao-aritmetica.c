@@ -3,7 +3,6 @@
 int main() {
 	int quantidade = 0;
 	int razao;
-	int i = 0;
 	int pa = 0;
 	
 	printf ("Digite a quantidade de elementos da PA: ");
@@ -11,7 +10,11 @@ int main() {
 	printf ("Digite a razao da PA: ");
 	scanf ("%d", &razao);
 	
-	for (i = 0; i < quantidade; i++) {
+	for (int i = 1; i < quantidade; i++) {
+		if (i == quantidade) {
+			printf ("%d.", pa);
+			break;
+		}
 		printf ("%d, ", pa);
 		pa = pa + razao;
 	}
