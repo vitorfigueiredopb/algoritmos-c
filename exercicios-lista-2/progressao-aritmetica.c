@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 int main() {
-	int quantidade = 0;
-	int razao;
+	int quantidade, razao;
 	int pa = 0;
+	int i;
 	
 	printf ("Digite a quantidade de elementos da PA: ");
 	scanf ("%d", &quantidade);
 	printf ("Digite a razao da PA: ");
 	scanf ("%d", &razao);
 	
-	for (int i = 1; i < quantidade; i++) {
+	for (i = 1; i <= quantidade; i++) {
 		if (i == quantidade) {
 			printf ("%d.", pa);
 			break;
 		}
 		printf ("%d, ", pa);
-		pa = pa + razao;
+		pa += razao;
 	}
 	
 	return 0;
