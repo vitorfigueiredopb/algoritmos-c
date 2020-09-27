@@ -12,11 +12,16 @@ int main() {
     	printf ("%d! = %d", fatorial, fatorial);
 	}
 	else if (fatorial > 0) {
+		printf ("\nFatorial de %d: %d! = %d * ", fatorial, fatorial, fatorial);
 		for (i = fatorial - 1; i != 0; i--) {
-			printf ("%d! * %d! = ", fatorial, i);
-		    fatorial = fatorial * i;
+			fatorial = fatorial * i;
+			if (i == 1) {
+				printf ("%d ", i);
+			} else {
+				printf ("%d * ", i);
+			}
 		}
-	printf ("%d", fatorial);
+	printf ("= %d\n", fatorial);
 	}
 	else {
 		printf ("\nNumero invalido!");
