@@ -1,3 +1,4 @@
+//Algitmo que exibe uma lista de pa
 #include <stdio.h>
 
 int main() {
