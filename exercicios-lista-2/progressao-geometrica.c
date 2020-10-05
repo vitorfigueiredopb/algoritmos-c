@@ -1,9 +1,9 @@
 //Algitmo que exibe uma lista de pg
 #include <stdio.h>
 
-int main() {
+int main () {
 	int quantidade, razao;
-	int i;;
+	int i;
 	int cont = 1;
 	
 	printf ("Digite a quantidade de elementos da PG: ");
